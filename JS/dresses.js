@@ -146,4 +146,5 @@ function exitQV() {
 
 function addToCart(x) {
     cartList.push(dresses[x]);
+    console.log(cartList);
 }

@@ -134,7 +134,7 @@ function getValue() {
                 z += totalAmount;
                 subTotal.innerHTML = Number(z);
             }
-        } else if ((cartList.length) == 1) {
+        } else if (cartList.length == 1) {
             subTotal.innerHTML = 0;
         }
     }
@@ -147,10 +147,9 @@ for (let i = 0; i < cartList.length; i++) {
         getValue()
         cartItemsDisplay(cartList);
         console.log(cartList);
-    }
-}
-for (let i = 0; i < cartList.length; i++) {
-    if (cartList.length == 0) {
-        emptyCartSection.style.display = "flex";
+        if (cartList.length == 0) {
+            emptyCartSection.style.display = "flex";
+            subTotal.innerHTML = 0
+        }
     }
 }

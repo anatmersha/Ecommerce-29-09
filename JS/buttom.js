@@ -145,4 +145,5 @@ function exitQV() {
 
 function addToCart(x) {
     cartList.push(buttoms[x]);
+    console.log(cartList);
 }
