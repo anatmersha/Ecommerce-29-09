@@ -236,7 +236,7 @@ body {
 }
 
 #sortList {
-    width: 175px;
+    width: 190px;
     height: 38px;
     font-size: 26px;
     font-weight: bold;
@@ -507,7 +507,7 @@ footer {
         margin-left: 214px;
     }
     #sortList {
-        margin-left: 94px;
+        margin-left: 165px;
         width: 120px;
         height: 34px;
         font-size: 22px;
@@ -667,7 +667,7 @@ footer {
     }
     #sortList {
         margin-left: 94px;
-        width: 95px;
+        width: 135px;
         height: 27px;
         font-size: 17px;
         border: black 2px solid;
@@ -864,7 +864,7 @@ footer {
         padding-right: 41px;
     }
     #sortList {
-        margin-left: 45px;
+        margin-left: 65px;
         width: 50px;
         height: 12px;
         font-size: 4px;
