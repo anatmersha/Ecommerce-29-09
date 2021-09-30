@@ -110,8 +110,6 @@ function coupon20P() {
                 discount.innerHTML = "20% OFF!";
                 discountAmount.innerHTML = `${Number(z) * 0.9}$`;
             }
-        } else if ((cartList.length) == 1) {
-            subTotal.innerHTML = 0;
         }
     }
 }
@@ -134,9 +132,11 @@ function getValue() {
                 z += totalAmount;
                 subTotal.innerHTML = Number(z);
             }
-        } else if (cartList.length == 1) {
-            subTotal.innerHTML = 0;
         }
+    }
+    if (cartList.length == 0) {
+        emptyCartSection.style.display = "flex";
+        subTotal.innerHTML = 0
     }
 }
 getValue()
@@ -147,9 +147,5 @@ for (let i = 0; i < cartList.length; i++) {
         getValue()
         cartItemsDisplay(cartList);
         console.log(cartList);
-        if (cartList.length == 0) {
-            emptyCartSection.style.display = "flex";
-            subTotal.innerHTML = 0
-        }
     }
 }
